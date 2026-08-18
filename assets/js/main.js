@@ -1,9 +1,10 @@
-// Lightweight interactions: nav toggle, reveal on scroll, project modal
+// main.js — small interactions: nav toggle, reveal on scroll, modal, year
+
 document.addEventListener('DOMContentLoaded', ()=>{
   // year
   const y = document.getElementById('year'); if(y) y.textContent = new Date().getFullYear();
 
-  // nav toggle
+  // nav toggle for mobile
   const btn = document.querySelector('.nav-toggle');
   const menu = document.getElementById('navlist');
   if(btn && menu){
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   const obs = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('on'); });
   }, {threshold:0.12});
-  document.querySelectorAll('.rv').forEach(n=>obs.observe(n));
+  document.querySelectorAll('.rv').forEach(n=> obs.observe(n));
 
   // project modal
   const pjModal = document.getElementById('pjModal');
