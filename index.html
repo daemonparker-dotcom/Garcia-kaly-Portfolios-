@@ -5,11 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Garcia Mavoungou Kali — Analyste financier & Reporting</title>
   <meta name="description" content="Garcia M. Kali — Analyste financier & Reporting. Portfolio: projets, CV, compétences, contact." />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Open Graph -->
   <meta property="og:title" content="Garcia M. Kali — Portfolio" />
   <meta property="og:description" content="Analyste financier en formation — tableaux de bord, reporting, automatisation Excel & IA." />
   <meta property="og:type" content="website" />
@@ -18,8 +13,6 @@
 
   <link rel="preload" href="/assets/css/styles.css" as="style">
   <link rel="stylesheet" href="/assets/css/styles.css">
-
-  <script type="module" src="/assets/js/tz-clock.js" defer></script>
   <script defer src="/assets/js/main.js"></script>
 
   <script type="application/ld+json">
@@ -37,7 +30,7 @@
   <header class="site-header">
     <nav class="nav container" aria-label="Navigation principale">
       <a class="brand" href="#">Garcia M. Kali</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="navlist">☰</button>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navlist">Menu</button>
       <ul id="navlist" class="nav-links">
         <li><a href="#about">À propos</a></li>
         <li><a href="#work">Projets</a></li>
@@ -49,78 +42,92 @@
 
     <section id="hero" class="hero container">
       <div class="hero-left">
-        <p class="kicker">Disponible pour un stage · Brazzaville 2026</p>
-        <h1 class="hero-title">Mavoungou Kali Garcia — <span class="hero-accent">Analyste financier & Reporting</span></h1>
-        <p class="lead">Je conçois des tableaux de bord clairs, automatise le reporting et transforme les données en décisions — Excel avancé, OHADA et IA appliquée au reporting.</p>
-        <div class="h-actions">
-          <a class="btn btn-cta" href="#work">Voir mes travaux</a>
-          <a class="btn btn-ghost" href="/assets/cv/garcia-cv.pdf" download>Télécharger le CV</a>
-        </div>
-        <div class="meta-row">
-          <tz-clock timezone="Africa/Brazzaville" show-seconds format="24"></tz-clock>
+        <p class="kicker">Disponible pour un stage — Brazzaville 2026</p>
+        <h1>Je suis <span class="accent">Garcia M. Kali</span><br/>Analyste financier & reporting automatisé</h1>
+        <p class="lead">Tableaux de bord, reporting OHADA, automatisation Excel & outils IA — j'aide les organisations à transformer les chiffres en décisions.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#work">Voir mes travaux</a>
+          <a class="btn btn-ghost" href="/assets/cv/garcia-cv.pdf" download>Télécharger CV</a>
         </div>
       </div>
-
-      <div class="hero-right">
-        <div class="photo-frame" role="img" aria-label="Portrait de Garcia">
-          <!-- Decorative gradient + subtle pattern in place of a photo (replace with real image in assets/images/hero.webp) -->
-          <svg width="100%" height="100%" viewBox="0 0 600 740" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <defs>
-              <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0%" stop-color="#d4a853" stop-opacity="0.9"/>
-                <stop offset="50%" stop-color="#0ea5e9" stop-opacity="0.9"/>
-                <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.9"/>
-              </linearGradient>
-              <filter id="grain"><feTurbulence baseFrequency="0.8" numOctaves="1" stitchTiles="stitch" result="noise"/><feColorMatrix type="saturate" values="0"/></filter>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#g1)" />
-            <g opacity="0.06"><rect width="100%" height="100%" filter="url(#grain)"/></g>
-            <text x="50%" y="52%" text-anchor="middle" font-family="Playfair Display,serif" font-weight="800" font-size="58" fill="rgba(255,255,255,0.95)">Garcia</text>
-            <text x="50%" y="62%" text-anchor="middle" font-family="Inter,system-ui" font-size="18" fill="rgba(255,255,255,0.9)">Analyste financier — L2</text>
-          </svg>
+      <div class="hero-right" aria-hidden="true">
+        <div class="hero-card">
+          <div class="avatar">GM</div>
+          <div class="hero-stats">
+            <div><strong>4+</strong><span>Projets</span></div>
+            <div><strong>Excel</strong><span>Avancé</span></div>
+            <div><strong>OHADA</strong><span>Maîtrisé</span></div>
+          </div>
         </div>
       </div>
     </section>
   </header>
 
   <main>
-    <!-- ABOUT -->
-    <section id="about" class="section container">
-      <div class="section-grid">
+    <!-- sections : about / work / skills / contact (implémentation complète en branche) -->
+    <section id="about" class="section container rv">
+      <div class="section-head"><h2>À propos</h2></div>
+      <div class="about-grid">
         <div class="about-text">
-          <h2>À propos</h2>
-          <p>Je suis <strong>Garcia Mavoungou Kali</strong>, étudiant en Licence 2 Comptabilité & Gestion Financière (E.A.D, Brazzaville). Je construis des outils de reporting et des dashboards qui permettent aux équipes de prendre des décisions plus rapides et plus sûres.</p>
-          <p>Compétences clés : <em>Tableaux de bord, Excel avancé, reporting automatisé, droit OHADA</em>.</p>
+          <p>Je suis <strong>Garcia Mavoungou Kali</strong>, étudiant en Licence 2 Comptabilité & Gestion Financière à l'E.A.D (Brazzaville). Passionné par l'analyse financière, les tableaux de bord et l'automatisation des process de reporting.</p>
+          <p>Mon objectif : apporter rigueur et valeur mesurable aux équipes financières grâce à des outils modernes et une approche data-driven.</p>
         </div>
         <div class="about-cards">
-          <div class="ac"><div class="ac-num">01</div><div class="ac-title">Compétences</div><div class="ac-body">Excel avancé · Reporting · IA</div></div>
-          <div class="ac"><div class="ac-num">02</div><div class="ac-title">Objectif</div><div class="ac-body">Stage en cabinet comptable / finance · Brazzaville 2026</div></div>
+          <div class="ac">
+            <div class="ac-num">01</div>
+            <div class="ac-title">Compétences clés</div>
+            <div class="ac-body">Excel avancé · Reporting · IA pour la productivité · Droit OHADA</div>
+          </div>
+          <div class="ac">
+            <div class="ac-num">02</div>
+            <div class="ac-title">Objectif</div>
+            <div class="ac-body">Stage finance / cabinet comptable · Brazzaville 2026</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="work" class="section container">
-      <h2>Projets récents</h2>
+    <section id="work" class="section container rv">
+      <div class="section-head"><h2>Projets récents</h2></div>
       <div class="projects-grid">
+        <!-- Project cards: convert to case-study modals later -->
         <article class="pj">
-          <div class="pj-media" style="background:linear-gradient(135deg,#d4a853,#38bdf8)"><span class="pj-tag">Dashboard Excel</span></div>
-          <div class="pj-body"><h3>Budget Excel</h3><p>Tableaux de bord dynamiques, KPI, TCD et export PDF.</p><div class="pj-actions"><button class="pj-btn" data-pj="1">Voir</button></div></div>
+          <div class="pj-media" style="background:linear-gradient(135deg,#d4a853, #38bdf8)">
+            <span class="pj-tag">Dashboard Excel</span>
+          </div>
+          <div class="pj-body">
+            <h3>Budget Excel — Suivi & Reporting</h3>
+            <p>Outil de suivi financier personnel et KPI, tableaux dynamiques, TCD et export PDF.</p>
+            <div class="pj-actions"><button class="pj-btn" data-pj="1">Voir</button></div>
+          </div>
         </article>
+
         <article class="pj">
-          <div class="pj-media" style="background:linear-gradient(135deg,#0ea5e9,#8b5cf6)"><span class="pj-tag">Dashboard Financier</span></div>
-          <div class="pj-body"><h3>Congo Négoce SARL</h3><p>Reporting consolidé sur 3 exercices et analyses de performance.</p><div class="pj-actions"><button class="pj-btn" data-pj="2">Voir</button></div></div>
+          <div class="pj-media" style="background:linear-gradient(135deg,#0ea5e9,#8b5cf6)">
+            <span class="pj-tag">Dashboard Financier</span>
+          </div>
+          <div class="pj-body">
+            <h3>Dashboard — Congo Négoce SARL</h3>
+            <p>Tableau de bord multi-exercices, analyses verticales/horizontales et rapport synthétique PDF.</p>
+            <div class="pj-actions"><button class="pj-btn" data-pj="2">Voir</button></div>
+          </div>
         </article>
+
         <article class="pj">
-          <div class="pj-media" style="background:linear-gradient(135deg,#8b5cf6,#d4a853)"><span class="pj-tag">Simulation</span></div>
-          <div class="pj-body"><h3>Simulation Comptable</h3><p>Bilan simplifié et écritures de clôture.</p><div class="pj-actions"><button class="pj-btn" data-pj="3">Voir</button></div></div>
+          <div class="pj-media" style="background:linear-gradient(135deg,#8b5cf6,#d4a853)">
+            <span class="pj-tag">Simulation Comptable</span>
+          </div>
+          <div class="pj-body">
+            <h3>Simulation Comptable</h3>
+            <p>Construction d'un bilan simplifié, journaux et écritures de clôture.</p>
+            <div class="pj-actions"><button class="pj-btn" data-pj="3">Voir</button></div>
+          </div>
         </article>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section container">
-      <h2>Compétences</h2>
+    <section id="skills" class="section container rv">
+      <div class="section-head"><h2>Compétences</h2></div>
       <div class="skills-grid">
         <div class="skill">Microsoft Excel — Avancé</div>
         <div class="skill">Analyse financière</div>
@@ -129,16 +136,15 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section container">
-      <h2>Contact</h2>
+    <section id="contact" class="section container rv">
+      <div class="section-head"><h2>Contact</h2></div>
       <div class="contact-grid">
-        <div class="contact-card">
-          <p><strong>Brazzaville, Congo</strong></p>
-          <p>Tel: <a href="https://wa.me/242069677245">+242 06 96 77 245</a></p>
+        <div>
+          <p>Brazzaville, Congo</p>
+          <p>Téléphone: <a href="https://wa.me/242069677245">+242 06 96 77 245</a></p>
           <p>Email: <a href="mailto:mavoungoukalyg@gmail.com">mavoungoukalyg@gmail.com</a></p>
         </div>
-        <form id="contactForm" action="https://formspree.io/f/{your-id}" method="POST" class="contact-form">
+        <form id="contactForm" action="https://formspree.io/f/{your-id}" method="POST">
           <label for="name">Nom</label>
           <input id="name" name="name" required>
           <label for="email">Email</label>
@@ -152,12 +158,16 @@
   </main>
 
   <footer class="site-footer container">
-    <div class="ft-left">© Garcia M. Kali — <span id="year"></span></div>
-    <div class="ft-right">Design & Performance optimisés</div>
+    <div class="foot-left">© Garcia M. Kali — <span id="year"></span></div>
+    <div class="foot-right">Built with care · Performance & Accessibility focused</div>
   </footer>
 
-  <!-- modal -->
-  <div id="pjModal" class="modal" aria-hidden="true"><div class="modal-inner" role="dialog" aria-modal="true"><button id="pjClose" class="modal-close">✕</button><div id="pjContent"></div></div></div>
-
+  <!-- lightweight project modal template -->
+  <div id="pjModal" class="modal" aria-hidden="true">
+    <div class="modal-inner" role="dialog" aria-modal="true">
+      <button id="pjClose" class="modal-close">✕</button>
+      <div id="pjContent"></div>
+    </div>
+  </div>
 </body>
 </html>
