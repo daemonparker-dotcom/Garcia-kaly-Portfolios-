@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Preview - Hero portrait</title>
+<link rel="stylesheet" href="/assets/css/styles.css">
+<style>
+  /* small overrides for preview only */
+  body{padding:30px;background:linear-gradient(180deg,#03050a,#07101a)}
+  .preview-wrap{max-width:1100px;margin:40px auto;background:rgba(255,255,255,0.02);border-radius:12px;padding:24px}
+  .hero{min-height:420px;display:grid;grid-template-columns:360px 1fr;gap:24px;align-items:center}
+  .hero-left{padding:0}
+  .h-name{font-size:2rem}
+  .hr-photo-w{position:relative;width:360px;height:480px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.04);box-shadow:0 18px 40px rgba(2,6,23,0.6)}
+  .hr-photo{width:100%;height:100%;object-fit:cover;display:block}
+  .hero-right{padding-left:10px}
+  .h-desc{color:var(--dim)}
+</style>
+</head>
+<body>
+  <div class="preview-wrap">
+    <section class="hero">
+      <div class="hr-photo-w" aria-hidden="false">
+        <!-- placeholder portrait (Unsplash) - replace by your photo by URL or repo path -->
+        <img class="hr-photo" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="Portrait preview">
+      </div>
+
+      <div class="hero-left">
+        <div class="h-badge"><div class="h-bdot"></div>Disponible pour un stage — Brazzaville 2026</div>
+        <h1 class="h-name"><span class="fn">Garcia</span> <span class="ln">Mavoungou Kali</span></h1>
+        <p class="h-sub">Étudiant L2 · Comptabilité & Finance · E.A.D</p>
+        <p class="h-desc">Analyste financier en formation — spécialisé en reporting, tableaux de bord et automatisation Excel. Ceci est un aperçu du rendu si l'on passe le portrait en grand format (portrait).</p>
+        <div style="margin-top:16px">
+          <a href="#projets" class="btn-g">Mes projets</a>
+          <a href="#contact" class="btn-cv" style="margin-left:10px">Contact</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
